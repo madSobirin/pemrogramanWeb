@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../jquery/bootstrap/css/bootstrap.min.css" />
+    <title>Learn | Jquery</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="kontent">Pemrograman Web 1</div>
+      <p>
+        <button class="btn btn-primary" id="btn_add">Add Class</button>
+        <button class="btn btn-primary" id="btn_remove">Remove Class</button>
+        <button class="btn btn-primary" id="btn_toggle">Toggle Class</button>
+      </p>
+    </div>
+
+    <script src="../jquery/script/jquery-3.7.1.min.js"></script>
+    <script src="../jquery/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('#btn_add').click(function () {
+          $('#kontent').addClass('alert alert-success');
+        });
+        $('#btn_remove').click(function () {
+          $('#kontent').removeClass('alert alert-success');
+        });
+        $('#btn_toggle').click(function () {
+          $('#kontent').toggleClass('alert alert-danger');
+        });
+      });
+    </script>
+  </body>
+</html>

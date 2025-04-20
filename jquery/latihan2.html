@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../jquery/bootstrap/css/bootstrap.min.css" />
+    <title>Pengenalan jQuery - Slide</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Slide Down</h1>
+      <div class="panel panel-default">
+        <div class="panel-heading" id="flip">Berita Terbaru</div>
+        <div class="panel-body" id="slide">
+          <h3>Mahasiswa POLINDRA meraih juara pertama Web tingkat Nasional</h3>
+        </div>
+      </div>
+    </div>
+
+    <script src="script/jquery-3.7.1.min.js"></script>
+    <script src="../jquery/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('#slide').hide();
+        $('#flip').click(function () {
+          $('#slide').slideDown('slow');
+        });
+      });
+    </script>
+  </body>
+</html>

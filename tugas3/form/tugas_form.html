@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TUGAS FORM</title>
+    <!-- my font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chango&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: 'calibri', sans-serif;
+        font-size: 16.5px;
+        margin: 0;
+        padding: 0;
+      }
+
+      ::-webkit-scrollbar {
+        display: none;
+      }
+
+      .navbar-list {
+        display: flex;
+        justify-content: space-around;
+        background-color: rgba(17, 17, 17, 0.9);
+        position: sticky;
+        z-index: 1000;
+        top: 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        font-family: 'poppins', sans-serif;
+      }
+      .navbar-list a {
+        color: white;
+        text-decoration: none;
+      }
+      .navbar-nav {
+        font-family: 'Chango', sans-serif;
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        margin-left: 50px;
+        margin-right: 500px;
+      }
+      .navbar-nav span {
+        color: rgb(130, 130, 130);
+      }
+      .navbar-list ul li {
+        display: inline-block;
+        margin-right: 30px;
+      }
+      .navbar-list li a:hover {
+        color: rgb(130, 130, 130);
+      }
+      .navbar-list li a::after {
+        content: '';
+        display: block;
+        padding-bottom: 0.5rem;
+        border-bottom: 0.1rem solid rgb(255, 255, 255);
+        transform: scaleX(0);
+        transition: 0.2s linear;
+      }
+      .navbar-list a:hover::after {
+        transform: scaleX(0.5);
+      }
+      .formm {
+        display: flex;
+        background-color: #c0e6f5;
+        width: 30%;
+        height: 300px;
+        margin: 100px auto;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+      }
+
+      .formm form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+      }
+
+      .formm select {
+        background-color: rgb(176, 176, 176);
+      }
+
+      input[type='text'] {
+        background: none;
+        border: none;
+      }
+      p {
+        color: rgb(130, 130, 130);
+        text-align: center;
+        font-family: 'poppins', sans-serif;
+      }
+      .footer {
+        background-color: rgba(17, 17, 17, 0.9);
+        padding: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--  Navbar Start -->
+    <nav class="navbar-list">
+      <a href="#" class="navbar-nav">tugas<span>css.</span></a>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../biografi.html">Biografi</a></li>
+        <li><a href="../artikel.html">Artikel</a></li>
+        <li><a href="../galeri.html">Galeri</a></li>
+        <li><a href="tugas_form.html">Form</a></li>
+        <li><a href="../kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- form Start -->
+    <article class="formm">
+      <form method="post" action="">
+        <h4 style="margin-left: 0">DATA DIRI MAHASISWA</h4>
+        <table cellpadding="5" style="margin-left: 15px">
+          <tr>
+            <td width="80px"><label for="nama">Nama</label></td>
+            <td>:</td>
+            <td><input type="text" id="nama" /></td>
+          </tr>
+          <tr>
+            <td><label for="nim">Nim</label></td>
+            <td>:</td>
+            <td><input type="text" id="nim" /></td>
+          </tr>
+          <tr>
+            <td>Jurusan</td>
+            <td>:</td>
+            <td>
+              <select>
+                <option value="" disabled selected>Dropdown</option>
+                <option value="kesehatan">Kesehatan</option>
+                <option value="teknik">Teknik</option>
+                <option value="teknikInformatika">Teknik Informatika</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Prodi</td>
+            <td>:</td>
+            <td>
+              <select style="width: 131px">
+                <option value="" disabled selected>Dropdown</option>
+                <option value="rpl">RPL</option>
+                <option value="ti">TI</option>
+                <option value="sikc">SIKC</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="kelas">Kelas</label></td>
+            <td>:</td>
+            <td><input type="text" id="kelas" /></td>
+          </tr>
+        </table>
+      </form>
+    </article>
+    <!-- Form End -->
+
+    <!-- footer start -->
+    <footer class="footer">
+      <p>&copy; 2025 Ahmad Sobirin. All Rights Reserved.</p>
+    </footer>
+    <!-- footer end -->
+  </body>
+</html>

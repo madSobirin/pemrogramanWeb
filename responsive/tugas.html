@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator | Ahmad Sobirin</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-icons.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.png" alt="Logo" class="d-inline-block align-top" />
+          Calculator
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home"
+                ><i class="bi bi-house-door"></i> Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#calculator"
+                ><i class="bi bi-calculator"></i> Calculator</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about"
+                ><i class="bi bi-file-earmark-person-fill"></i> About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact"
+                ><i class="bi bi-envelope"></i> Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero text-center" id="home">
+      <div class="container">
+        <h1 class="display-4 fw-bold">Welcome to My Project</h1>
+        <div class="mt-4">
+          <a href="#calculator" class="btn btn-light btn-lg mx-2">
+            <i class="bi bi-calculator"></i> Try Calculator
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section class="calculator-section" id="calculator">
+      <div class="container calculator-container">
+        <h2 class="calculator-title text-center">
+          <i class="bi bi-calculator"></i> Calculator
+        </h2>
+
+        <div class="mb-3">
+          <input
+            type="number"
+            id="input_nilai_a"
+            class="form-control calculator-input"
+            placeholder="Masukan Angka Pertama"
+          />
+        </div>
+
+        <div class="mb-3">
+          <input
+            type="number"
+            id="input_nilai_b"
+            class="form-control calculator-input"
+            placeholder="Masukan Angka Kedua"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="operator" class="form-label">Select Operation:</label>
+          <select id="operator" class="form-select calculator-select">
+            <option value="tambah">Penambahan (+)</option>
+            <option value="kurang">Pengurangan (-)</option>
+            <option value="kali">Perkalian (×)</option>
+            <option value="bagi">Pembagian (÷)</option>
+          </select>
+        </div>
+
+        <div class="d-grid gap-2">
+          <button
+            id="btn_hitung"
+            class="btn btn-primary calculator-btn"
+            onclick="hitung()"
+          >
+            <i class="bi bi-equals"></i> CALCULATE
+          </button>
+          <button
+            id="btn_reset"
+            class="btn btn-secondary calculator-btn"
+            onclick="resetForm()"
+          >
+            <i class="bi bi-arrow-counterclockwise"></i> RESET
+          </button>
+        </div>
+
+        <div class="result-container calc">
+          <p id="hasilnya">0</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-5 bg-light" id="about">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7 text-justify">
+            <h2 class="fw-bold mb-4">About Calculator</h2>
+            <p class="lead">
+              Mesin hitung atau kalkulator adalah alat untuk menghitung dari
+              perhitungan sederhana seperti penjumlahan, pengurangan, perkalian
+              dan pembagian sampai kepada kalkulator ilmiah yang dapat
+              menghitung rumus matematika tertentu. Pada perkembangannya
+              sekarang ini, kalkulator sering dimasukkan sebagai fungsi tambahan
+              daripada komputer, ponsel, bahkan sampai jam tangan. Rata-rata
+              kalkulator memiliki 12 hingga 15 digit, tetapi mesin hitung ilmiah
+              sanggup menghitung hingga angka 1 googol menggunakan rumus
+              tertentu.
+            </p>
+          </div>
+          <div class="col-lg-5">
+            <img
+              src="img/calc.jpg"
+              class="img-fluid rounded shadow"
+              alt="Tampilan Kalkulator"
+            />
+            <p class="caption text-muted fst-italic">
+              Gambar. Old machine calculator
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+
+    <section class="py-5" id="contact">
+      <div class="container">
+        <h2 class="text-center mb-5">
+          <i class="bi bi-envelope"></i> Hubungi Saya
+        </h2>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Nama Lengkap</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Masukkan nama Anda"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Masukkan email Anda"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Pesan</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="5"
+                  placeholder="Tulis pesan Anda di sini"
+                ></textarea>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">
+                  <i class="bi bi-send"></i> Kirim Pesan
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+      <div class="container text-center text-md-start">
+        <div class="row text-center text-md-start">
+          <!-- Column 1 -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5
+              class="text-uppercase mb-4 fw-bold"
+              style="color: rgb(245, 238, 220)"
+            >
+              Ahmad Sobirin
+            </h5>
+            <p>
+              pengembang web pemula yang terus belajar dan berusaha membuat
+              aplikasi-aplikasi sederhana. Salah satunya adalah kalkulator ini
+            </p>
+          </div>
+
+          <!-- Column 2 -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5
+              class="text-uppercase mb-4 fw-bold"
+              style="color: rgb(245, 238, 220)"
+            >
+              Navigasi
+            </h5>
+            <p>
+              <a href="#home" class="text-white text-decoration-none">Home</a>
+            </p>
+            <p>
+              <a href="#calculator" class="text-white text-decoration-none"
+                >Calculator</a
+              >
+            </p>
+            <p>
+              <a href="#about" class="text-white text-decoration-none">About</a>
+            </p>
+            <p>
+              <a href="#contact" class="text-white text-decoration-none"
+                >Contact</a
+              >
+            </p>
+          </div>
+
+          <!-- Column 3 -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5
+              class="text-uppercase mb-4 fw-bold"
+              style="color: rgb(245, 238, 220)"
+            >
+              Kontak
+            </h5>
+            <p>
+              <i class="bi bi-house-door-fill me-2"></i> Indramayu, Indonesia
+            </p>
+            <p>
+              <i class="bi bi-envelope-fill me-2"></i>
+              ahmdsobirin29@gmail.com
+            </p>
+            <p><i class="bi bi-telephone-fill me-2"></i> +62 8960 6904 312</p>
+          </div>
+
+          <!-- Column 4 -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mt-3">
+            <h5
+              class="text-uppercase mb-4 fw-bold"
+              style="color: rgb(245, 238, 220)"
+            >
+              Ikuti Saya
+            </h5>
+            <a
+              href="https://www.facebook.com/sobirin.birin.92560281"
+              class="text-white me-3"
+              target="_blank"
+              ><i class="bi bi-facebook fs-4"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/mad.sob?igsh=MXN2djYwMnBrdWR0dg=="
+              class="text-white me-3"
+              target="_blank"
+              ><i class="bi bi-instagram fs-4"></i
+            ></a>
+            <a
+              href="https://github.com/madSobirin"
+              class="text-white me-3"
+              target="_blank"
+              ><i class="bi bi-github fs-4"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/ahmd-sobirin-69284b348?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              class="text-white"
+              target="_blank"
+              ><i class="bi bi-linkedin fs-4"></i
+            ></a>
+          </div>
+        </div>
+
+        <hr class="mt-4" />
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p class="mb-0">&copy; 2025 Ahmad Sobirin. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      function hitung() {
+        let nilai_a = Number(document.getElementById('input_nilai_a').value);
+        let nilai_b = Number(document.getElementById('input_nilai_b').value);
+        let operator = document.getElementById('operator').value;
+        let hasil;
+
+        if (
+          isNaN(nilai_a) ||
+          isNaN(nilai_b) ||
+          document.getElementById('input_nilai_a').value === '' ||
+          document.getElementById('input_nilai_b').value === ''
+        ) {
+          hasil = 'Please enter valid numbers!';
+        } else {
+          if (operator === 'tambah') {
+            hasil = nilai_a + nilai_b;
+          } else if (operator === 'kurang') {
+            hasil = nilai_a - nilai_b;
+          } else if (operator === 'kali') {
+            hasil = nilai_a * nilai_b;
+          } else if (operator === 'bagi') {
+            if (nilai_b !== 0) {
+              hasil = (nilai_a / nilai_b).toFixed(2);
+            } else {
+              hasil = 'Cannot divide by zero';
+            }
+          } else {
+            hasil = 'Invalid operation!';
+          }
+        }
+        document.getElementById('hasilnya').textContent = hasil;
+      }
+
+      function resetForm() {
+        document.getElementById('input_nilai_a').value = '';
+        document.getElementById('input_nilai_b').value = '';
+        document.getElementById('operator').selectedIndex = 0;
+        document.getElementById('hasilnya').textContent = '0';
+      }
+    </script>
+  </body>
+</html>

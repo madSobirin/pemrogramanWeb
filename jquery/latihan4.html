@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../jquery/bootstrap/css/bootstrap.min.css" />
+    <title>learn | Jquery</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Set Content and Attributes</h1>
+      <div id="Content1"></div>
+      <div id="Content2"></div>
+      <p>
+        <input
+          type="text"
+          id="input_konten"
+          class="form-control"
+          placeholder="Masukan text disini"
+        />
+      </p>
+      <p>
+        <button class="btn btn-primary" id="btn_txt">Set TEXT</button>
+        <button class="btn btn-primary" id="btn_html">Set HTML</button>
+        <button class="btn btn-primary" id="btn_value">Set Value</button>
+      </p>
+    </div>
+
+    <script src="../jquery/script/jquery-3.7.1.min.js"></script>
+    <script src="../jquery/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('#btn_txt').click(function () {
+          $('#Content1').text('Pemrograman Web');
+        });
+        $('#btn_html').click(function () {
+          $('#Content2').html('Pemrograman <b>Web</b>');
+        });
+        $('#btn_value').click(function () {
+          $('#input_konten').val('Pemrograman Web');
+        });
+      });
+    </script>
+  </body>
+</html>

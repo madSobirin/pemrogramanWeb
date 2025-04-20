@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap Form</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Form Kontak</h1>
+      <form name="form" action="" method="post">
+        <div class="form-group">
+          <label for="nama" class="form-label">Nama Lengkap:</label>
+          <input type="text" class="form-control" id="nama" name="nama" />
+        </div>
+        <div class="form-group">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="email" name="email" />
+        </div>
+        <div class="form-group">
+          <label for="jk" class="form-label">Jenis Kelamin:</label>
+          <select class="form-control" id="jk" name="jk">
+            <option value="">Pilih</option>
+            <option value="L">Laki-laki</option>
+            <option value="P">Perempuan</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="pesan" class="form-label">Pesan:</label>
+          <textarea class="form-control" id="pesan" name="pesan"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

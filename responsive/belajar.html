@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahmad Sobirin | Web responsive</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="../responsive/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.cs" />
+    <link
+      rel="stylesheet"
+      href="../responsive/bootstrap/css/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    
+    <!-- Navigation Bar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark sticky-top"
+      style="background-color: rgba(245, 238, 220, 0.7)"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="img/logo.png"
+            alt="Company Logo"
+            width="50"
+            height="50"
+            class="d-inline-block align-top me-2"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home" style="color: black">
+                <i class="bi bi-house-door"></i> Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features" style="color: black">
+                <i class="bi bi-star"></i> Features
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery" style="color: black">
+                <i class="bi bi-images"></i> Gallery
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact" style="color: black">
+                <i class="bi bi-envelope"></i> Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero bg-light py-5" id="home">
+      <div class="container text-center">
+        <h1 class="display-4 fw-bold">Welcome to My RWD Project</h1>
+        <p class="lead">A complete implementation of Bootstrap components</p>
+        <div class="mt-4">
+          <button class="btn btn-primary btn-lg mx-2">
+            <i class="bi bi-download"></i> Download
+          </button>
+          <button class="btn btn-outline-secondary btn-lg mx-2">
+            <i class="bi bi-info-circle"></i> Learn More
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Alerts Section -->
+    <section class="container my-5" id="alerts">
+      <h2 class="text-center mb-4">
+        <i class="bi bi-exclamation-triangle"></i> Alert Messages
+      </h2>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <div class="alert alert-success alert-dismissible fade show">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="alert"
+            ></button>
+            <strong>Success!</strong> This alert box indicates a successful or
+            positive action.
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <div class="alert alert-info alert-dismissible fade show">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="alert"
+            ></button>
+            <strong>Info!</strong> This alert box indicates a neutral
+            informative change or action.
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <div class="alert alert-warning alert-dismissible fade show">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="alert"
+            ></button>
+            <strong>Warning!</strong> This alert box indicates a warning that
+            might need attention.
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <div class="alert alert-danger alert-dismissible fade show">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="alert"
+            ></button>
+            <strong>Danger!</strong> This alert box indicates a dangerous or
+            potentially negative action.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section with Grid -->
+    <section class="bg-light py-5" id="features">
+      <div class="container">
+        <h2 class="text-center mb-5"><i class="bi bi-grid"></i> Grid System</h2>
+        <div class="row text-center">
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <i class="bi bi-phone fs-1 text-primary"></i>
+                <h3 class="card-title">Mobile First</h3>
+                <p class="card-text">
+                  Designed with mobile-first approach for better user experience
+                  on all devices.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <i class="bi bi-layout-wtf fs-1 text-primary"></i>
+                <h3 class="card-title">Responsive Grid</h3>
+                <p class="card-text">
+                  12-column grid system that scales with screen size for perfect
+                  layouts.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <i class="bi bi-palette fs-1 text-primary"></i>
+                <h3 class="card-title">Beautiful Components</h3>
+                <p class="card-text">
+                  Pre-styled components that make your website look professional
+                  instantly.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Buttons Section -->
+    <section class="container my-5">
+      <h2 class="text-center mb-4"><i class="bi bi-toggle-on"></i> Buttons</h2>
+      <div class="row text-center">
+        <div class="col-md-3 col-6 mb-3">
+          <button class="btn btn-primary w-100">Primary</button>
+        </div>
+        <div class="col-md-3 col-6 mb-3">
+          <button class="btn btn-secondary w-100">Secondary</button>
+        </div>
+        <div class="col-md-3 col-6 mb-3">
+          <button class="btn btn-success w-100">Success</button>
+        </div>
+        <div class="col-md-3 col-6 mb-3">
+          <button class="btn btn-danger w-100">Danger</button>
+        </div>
+        <div class="col-md-3 col-6 mb-3">
+          <button class="btn btn-warning w-100">Warning</button>
+        </div>
+        <div class="col-md-3 col-6 mb-3">
+          <button class="btn btn-info w-100">Info</button>
+        </div>
+        <div class="col-md-3 col-6 mb-3">
+          <button class="btn btn-light w-100">Light</button>
+        </div>
+        <div class="col-md-3 col-6 mb-3">
+          <button class="btn btn-dark w-100">Dark</button>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        <button class="btn btn-outline-primary mx-1">Outline</button>
+        <button class="btn btn-outline-success mx-1">Outline</button>
+        <button class="btn btn-outline-danger mx-1">Outline</button>
+        <button class="btn btn-outline-warning mx-1">Outline</button>
+      </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="bg-light py-5" id="contact">
+      <div class="container">
+        <h2 class="text-center mb-4">
+          <i class="bi bi-envelope-paper"></i> Contact Form
+        </h2>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <form>
+              <div class="form-group mb-3">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Enter your name"
+                />
+              </div>
+              <div class="form-group mb-3">
+                <label for="email">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Enter your email"
+                />
+              </div>
+              <div class="form-group mb-3">
+                <label for="subject">Subject</label>
+                <select class="form-control" id="subject">
+                  <option>General Inquiry</option>
+                  <option>Technical Support</option>
+                  <option>Feedback</option>
+                </select>
+              </div>
+              <div class="form-group mb-3">
+                <label for="message">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="5"
+                  placeholder="Enter your message"
+                ></textarea>
+              </div>
+              <div class="form-check mb-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="newsletter"
+                />
+                <label class="form-check-label" for="newsletter">
+                  Subscribe to newsletter
+                </label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Table Section -->
+    <section class="container my-5">
+      <h2 class="text-center mb-4">
+        <i class="bi bi-table"></i> Responsive Table
+      </h2>
+      <div class="table-responsive">
+        <table class="table table-striped table-bordered table-hover">
+          <thead class="table-dark">
+            <tr>
+              <th>#</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Username</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>John</td>
+              <td>Doe</td>
+              <td>@johndoe</td>
+              <td><span class="badge bg-success">Active</span></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Jane</td>
+              <td>Smith</td>
+              <td>@janesmith</td>
+              <td><span class="badge bg-warning text-dark">Pending</span></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Bob</td>
+              <td>Johnson</td>
+              <td>@bobjohnson</td>
+              <td><span class="badge bg-danger">Inactive</span></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Alice</td>
+              <td>Williams</td>
+              <td>@alicew</td>
+              <td><span class="badge bg-success">Active</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Media Object Section -->
+    <section class="bg-light py-5" id="gallery">
+      <div class="container">
+        <h2 class="text-center mb-4">
+          <i class="bi bi-card-image"></i> Media Objects
+        </h2>
+
+        <!-- Media Object 1 -->
+        <div class="d-flex mb-4 align-items-start">
+          <img
+            src="img/calc.jpg"
+            class="me-3 rounded"
+            alt="Sample Image"
+            width="150"
+          />
+          <div>
+            <h5 class="mt-0">Calculator</h5>
+            <p>
+              Mesin hitung atau kalkulator adalah alat untuk menghitung dari
+              perhitungan sederhana seperti penjumlahan, pengurangan, perkalian
+              dan pembagian sampai kepada kalkulator ilmiah yang dapat
+              menghitung rumus matematika tertentu.
+            </p>
+
+            <!-- Nested Media Object -->
+            <div class="d-flex mt-4 align-items-start">
+              <a href="#" class="me-3">
+                <img
+                  src="img/logo.png"
+                  class="rounded"
+                  alt="Sample Image"
+                  width="100"
+                />
+              </a>
+              <div>
+                <h5 class="mt-0">Logo</h5>
+                <p>
+                  Logo merupakan suatu gambar atau sekadar sketsa dengan arti
+                  tertentu, dan mewakili suatu arti dari perusahaan, daerah,
+                  organisasi, produk, negara, lembaga, dan hal lainnya
+                  membutuhkan sesuatu yang singkat dan mudah diingat sebagai
+                  pengganti dari nama sebenarnya.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- List Group Section -->
+    <section class="container my-5">
+      <h2 class="text-center mb-4"><i class="bi bi-list-ul"></i> List Group</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <h4>Basic List</h4>
+          <ul class="list-group">
+            <li class="list-group-item">First item</li>
+            <li class="list-group-item">Second item</li>
+            <li class="list-group-item">Third item</li>
+            <li class="list-group-item">Fourth item</li>
+          </ul>
+        </div>
+        <div class="col-md-6 mb-4">
+          <h4>Interactive List</h4>
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action active">
+              Active item
+            </a>
+            <a href="#" class="list-group-item list-group-item-action"
+              >Second item</a
+            >
+            <a href="#" class="list-group-item list-group-item-action disabled"
+              >Disabled item</a
+            >
+            <a href="#" class="list-group-item list-group-item-action"
+              >Fourth item</a
+            >
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <h4>Contextual List</h4>
+          <ul class="list-group">
+            <li class="list-group-item list-group-item-primary">
+              Primary item
+            </li>
+            <li class="list-group-item list-group-item-secondary">
+              Secondary item
+            </li>
+            <li class="list-group-item list-group-item-success">
+              Success item
+            </li>
+            <li class="list-group-item list-group-item-danger">Danger item</li>
+            <li class="list-group-item list-group-item-warning">
+              Warning item
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6 mb-4">
+          <h4>List with Badges</h4>
+          <ul class="list-group">
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center"
+            >
+              Inbox
+              <span class="badge bg-primary rounded-pill">14</span>
+            </li>
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center"
+            >
+              Sent
+              <span class="badge bg-primary rounded-pill">2</span>
+            </li>
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center"
+            >
+              Drafts
+              <span class="badge bg-primary rounded-pill">5</span>
+            </li>
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center"
+            >
+              Trash
+              <span class="badge bg-primary rounded-pill">32</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Glyphicons/Icons Section -->
+    <section class="bg-light py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">
+          <i class="bi bi-emoji-smile"></i> Icons
+        </h2>
+        <div class="row text-center">
+          <div class="col-md-2 col-4 mb-4">
+            <i class="bi bi-envelope fs-2"></i>
+            <p>Envelope</p>
+          </div>
+          <div class="col-md-2 col-4 mb-4">
+            <i class="bi bi-heart fs-2"></i>
+            <p>Heart</p>
+          </div>
+          <div class="col-md-2 col-4 mb-4">
+            <i class="bi bi-star fs-2"></i>
+            <p>Star</p>
+          </div>
+          <div class="col-md-2 col-4 mb-4">
+            <i class="bi bi-camera fs-2"></i>
+            <p>Camera</p>
+          </div>
+          <div class="col-md-2 col-4 mb-4">
+            <i class="bi bi-gear fs-2"></i>
+            <p>Gear</p>
+          </div>
+          <div class="col-md-2 col-4 mb-4">
+            <i class="bi bi-search fs-2"></i>
+            <p>Search</p>
+          </div>
+          <div class="col-md-2 col-4 mb-4">
+            <i class="bi bi-house fs-2"></i>
+            <p>House</p>
+          </div>
+          <div class="col-md-2 col-4 mb-4">
+            <i class="bi bi-person fs-2"></i>
+            <p>Person</p>
+          </div>
+          <div class="col-md-2 col-4 mb-4">
+            <i class="bi bi-chat fs-2"></i>
+            <p>Chat</p>
+          </div>
+          <div class="col-md-2 col-4 mb-4">
+            <i class="bi bi-calendar fs-2"></i>
+            <p>Calendar</p>
+          </div>
+          <div class="col-md-2 col-4 mb-4">
+            <i class="bi bi-phone fs-2"></i>
+            <p>Phone</p>
+          </div>
+          <div class="col-md-2 col-4 mb-4">
+            <i class="bi bi-globe fs-2"></i>
+            <p>Globe</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <h5>About Us</h5>
+            <p>
+              Ini adalah proyek desain web responsif yang mendemonstrasikan
+              komponen Bootstrap komponen dan teknik responsif.
+            </p>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#home" class="text-white">Home</a></li>
+              <li><a href="#features" class="text-white">Features</a></li>
+              <li><a href="#gallery" class="text-white">Gallery</a></li>
+              <li><a href="#contact" class="text-white">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h5>Contact Info</h5>
+            <ul class="list-unstyled">
+              <li><i class="bi bi-geo-alt"></i> Indramayu, Indonesia</li>
+              <li><i class="bi bi-phone"></i> 0896 0690 4312</li>
+              <li><i class="bi bi-envelope"></i> madProject</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="text-center">
+          <p class="mb-0">&copy; 2025 Ahmad Sobirin. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="../responsive/bootstrap/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

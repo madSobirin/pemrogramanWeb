@@ -1,0 +1,91 @@
+ <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmad Sobirin | Kalkulator Sederhana</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Kalkulator</h1>
+
+        <div class="form-group">
+            <input type="number" id="input_nilai_a" class="form-control" placeholder="Masukkan angka pertama">
+        </div>
+
+        <div class="form-group">
+            <input type="number" id="input_nilai_b" class="form-control" placeholder="Masukkan angka kedua">
+        </div>
+
+        <div class="form-group">
+            <label for="operator">Pilih Operasi:</label>
+            <select id="operator">
+                <option value="tambah">+</option>
+                <option value="kurang">-</option>
+                <option value="kali">×</option>
+                <option value="bagi">÷</option>
+            </select>
+        </div>
+
+        <button id="btn_reset" class="btn btn-secondary form-control" onclick="resetForm()">RESET</button>
+        <button id="btn_hitung" class="btn btn-primary form-control" onclick="hitung()">HITUNG</button>
+
+       
+        <div id="hasil-container">
+            <p id="hasilnya">0</p>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function hitung() {
+              let nilai_a = Number(document.getElementById('input_nilai_a').value);
+              let nilai_b = Number(document.getElementById('input_nilai_b').value);
+              let operator = document.getElementById('operator').value;
+              let hasil;
+
+              // Validasi input kosong
+              if (isNaN(nilai_a) || isNaN(nilai_b) || document.getElementById('input_nilai_a').value === "" || document.getElementById('input_nilai_b').value === "") {
+                  hasil = "Masukkan angka yang valid!";
+              } 
+              else {
+                  if (operator === "tambah") {
+                      hasil = nilai_a + nilai_b;
+                  } 
+                  else if (operator === "kurang") {
+                      hasil = nilai_a - nilai_b;
+                  } 
+                  else if (operator === "kali") {
+                      hasil = nilai_a * nilai_b;
+                  } 
+                  else if (operator === "bagi") {
+                      if (nilai_b !== 0) {
+                          hasil = (nilai_a / nilai_b).toFixed(2);
+                      } else {
+                          hasil = "Tidak bisa dibagi nol";
+                      }
+                  } 
+                  else {
+                      hasil = "Operasi tidak valid!";
+                  }
+              }
+              document.getElementById('hasilnya').textContent = hasil;
+          }
+        function resetForm() {
+            document.getElementById('input_nilai_a').value = "";
+            document.getElementById('input_nilai_b').value = "";
+            document.getElementById('operator').selectedIndex = 0;
+            document.getElementById('hasilnya').textContent = "0";
+        }
+    </script>
+
+</body>
+</html> 

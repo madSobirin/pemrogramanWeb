@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan DOM</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Penjumlahan</h1>
+      <div class="form-group">
+        <label for="input_nilai_a" class="form-label">Nilai A:</label>
+        <input type="number" id="input_nilai_a" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="input_nilai_b" class="form-label">Nilai B:</label>
+        <input type="number" id="input_nilai_b" class="form-control" />
+      </div>
+      <button
+        id="btn_hitung"
+        class="btn btn-primary form-control"
+        onclick="penjumlahan()"
+      >
+        HITUNG
+      </button>
+      <h3 id="hasilnya"></h3>
+    </div>
+
+    <script type="text/javascript">
+      function penjumlahan() {
+        var nilai_a = Number(document.getElementById('input_nilai_a').value);
+        var nilai_b = Number(document.getElementById('input_nilai_b').value);
+
+        var hasil_penjumlahan = nilai_a + nilai_b;
+
+        document.getElementById('hasilnya').innerHTML =
+          'Total: ' + hasil_penjumlahan;
+      }
+    </script>
+  </body>
+</html>

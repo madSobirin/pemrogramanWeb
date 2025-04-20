@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TUGAS FORM</title>
+    <style>
+      body {
+        font-family: 'calibri', sans-serif;
+        font-size: 16.5px;
+      }
+      .formm {
+        display: flex;
+        background-color: #c0e6f5;
+        width: 30%;
+        height: 300px;
+        margin: 100px auto;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+      }
+      .formm form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+      }
+
+      .formm select {
+        background-color: rgb(176, 176, 176);
+      }
+
+      input[type='text'] {
+        background: none;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <article class="formm">
+      <form method="post" action="">
+        <h4 style="margin-left: 0">DATA DIRI MAHASISWA</h4>
+        <table cellpadding="5" style="margin-left: 15px">
+          <tr>
+            <td width="80px"><label for="nama">Nama</label></td>
+            <td>:</td>
+            <td><input type="text" id="nama" /></td>
+          </tr>
+          <tr>
+            <td><label for="nim">Nim</label></td>
+            <td>:</td>
+            <td><input type="text" id="nim" /></td>
+          </tr>
+          <tr>
+            <td>Jurusan</td>
+            <td>:</td>
+            <td>
+              <select>
+                <option value="" disabled selected>Dropdown</option>
+                <option value="kesehatan">Kesehatan</option>
+                <option value="teknik">Teknik</option>
+                <option value="teknikInformatika">Teknik Informatika</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Prodi</td>
+            <td>:</td>
+            <td>
+              <select style="width: 131px">
+                <option value="" disabled selected>Dropdown</option>
+                <option value="rpl">RPL</option>
+                <option value="ti">TI</option>
+                <option value="sikc">SIKC</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="kelas">Kelas</label></td>
+            <td>:</td>
+            <td><input type="text" id="kelas" /></td>
+          </tr>
+        </table>
+      </form>
+    </article>
+  </body>
+</html>

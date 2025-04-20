@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn | Jquery</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="konten1">Pemrograman Web 1</h1>
+      <p>
+        <button class="btn btn-primary" id="btn_biru">Biru</button>
+        <button class="btn btn-warning" id="btn_kuning">Kuning</button>
+        <button class="btn btn-success" id="btn_hijau">Hijau</button>
+      </p>
+    </div>
+
+    <script src="script/jquery-3.7.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('#btn_biru').click(function () {
+          $('#konten1').css('color', 'blue');
+        });
+        $('#btn_kuning').click(function () {
+          $('#konten1').css('color', 'yellow');
+        });
+        $('#btn_hijau').click(function () {
+          $('#konten1').css('color', 'green');
+        });
+      });
+    </script>
+  </body>
+</html>

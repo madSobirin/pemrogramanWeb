@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../jquery/bootstrap/css/bootstrap.min.css" />
+    <title>Learn | Jquery</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2 id="konten1">Pemrograman</h2>
+      <p>
+        <button class="btn btn-primary" id="btn_append">Append</button>
+        <button class="btn btn-primary" id="btn_prepend">Prepend</button>
+        <button class="btn btn-primary" id="btn_after">After</button>
+        <button class="btn btn-primary" id="btn_before">Before</button>
+      </p>
+    </div>
+
+    <!-- <script src="assets/jquery-3.6.0.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script> -->
+    <script src="../jquery/script/jquery-3.7.1.min.js"></script>
+    <script src="../jquery/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('#btn_append').click(function () {
+          $('#konten1').append(' Web');
+        });
+        $('#btn_prepend').click(function () {
+          $('#konten1').prepend('Bahasa ');
+        });
+        $('#btn_after').click(function () {
+          $('#konten1').after('<h2>Politeknik Negeri Indramayu</h2>');
+        });
+        $('#btn_before').click(function () {
+          $('#konten1').before('<h1>Belajar jQuery</h1>');
+        });
+      });
+    </script>
+  </body>
+</html>

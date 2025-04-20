@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn | Jquery</title>
+    <link rel="stylesheet" href="../jquery/bootstrap/css/bootstrap.min.css" />
+    <style>
+      body {
+        background-color: #f8f9fa;
+      }
+      .container {
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Get Content and Attributes</h1>
+      <div id="konten">Pemrograman <b>Web</b></div>
+      <p>
+        <input
+          type="text"
+          id="input_konten"
+          class="form-control"
+          placeholder="Masukan text disini"
+        />
+      </p>
+      <p>
+        <button class="btn btn-primary" id="btn_txt">Get TEXT</button>
+        <button class="btn btn-primary" id="btn_html">Get HTML</button>
+        <button class="btn btn-primary" id="btn_value">Get Value</button>
+      </p>
+    </div>
+
+    <script src="../jquery/script/jquery-3.7.1.min.js"></script>
+    <script src="../jquery/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('#btn_txt').click(function () {
+          alert('Text: ' + $('#konten').text());
+        });
+        $('#btn_html').click(function () {
+          alert('HTML: ' + $('#konten').html());
+        });
+        $('#btn_value').click(function () {
+          alert('VALUE: ' + $('#input_konten').val());
+        });
+      });
+    </script>
+  </body>
+</html>

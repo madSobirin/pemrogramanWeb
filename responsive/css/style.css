@@ -1,0 +1,118 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.calculator-section {
+  background-color: #f8f9fa;
+  padding: 4rem 0;
+}
+
+.calculator-container {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  padding: 2rem;
+}
+
+.calculator-title {
+  color: #183b4e;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.calculator-input {
+  font-size: 1.2rem;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.calculator-select {
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.calculator-btn {
+  font-weight: 500;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.result-container {
+  background-color: #212529;
+  color: #20c997;
+  font-family: monospace;
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 1rem;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-brand img {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.hero {
+  background: linear-gradient(to bottom, #27548a, #f8f9fa 100%);
+  color: white;
+  padding: 6rem 0;
+}
+
+#navbar {
+  background-color: rgba(245, 238, 220, 0.7);
+  backdrop-filter: blur(10px);
+}
+@font-face {
+  font-family: 'Digital7';
+  src: url('../bootstrap/fonts/digital-7.ttf') format('truetype');
+}
+
+section .calc {
+  font-family: 'Digital7', sans-serif;
+}
+.navbar-nav .nav-link {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #6d6d6d;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+  transform-origin: center;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 50%;
+}
+.text-justify {
+  text-align: justify;
+}
+
+/* Tambahkan di file style.css Anda */
+@media (max-width: 992px) {
+  #navbarNav {
+    text-align: center;
+  }
+  .navbar-nav {
+    display: inline-block;
+    float: none;
+  }
+  section h2 {
+    text-align: center;
+  }
+}
