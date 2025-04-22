@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galery | jQuery</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap-icons.css" />
+    <link rel="stylesheet" href="../bootstrap/css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm py-3">
+      <div class="container">
+        <a class="navbar-brand" href="#">Web<span>Galery</span></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item mx-2">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="profil.html">Profile</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="kontak.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container mt-3 pt-3">
+      <button class="btn btn-outline-secondary mb-3" onclick="history.back()">
+        ← Kembali Sebelumnya
+      </button>
+    </div>
+
+    <div class="container mt-5 pt-5">
+      <!-- Baris pertama: 3 kartu -->
+      <div class="row">
+        <!-- Galeri item 1 -->
+        <div class="col-md-4 mb-4">
+          <div
+            class="card h-100 shadow-sm"
+            data-desc="Deskripsi lengkap Proyek A: Sistem Informasi Kesehatan."
+          >
+            <img src="../img/health.jpg" class="card-img-top" alt="Proyek 1" />
+            <div class="card-body">
+              <h5 class="card-title">Proyek A</h5>
+              <p class="card-text">Deskripsi singkat proyek A.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Galeri item 2 -->
+        <div class="col-md-4 mb-4">
+          <div
+            class="card h-100 shadow-sm"
+            data-desc="Deskripsi lengkap Proyek B: Sistem Monitoring Ekonomi."
+          >
+            <img src="../img/economi.jpg" class="card-img-top" alt="Proyek 2" />
+            <div class="card-body">
+              <h5 class="card-title">Proyek B</h5>
+              <p class="card-text">Deskripsi singkat proyek B.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Galeri item 3 -->
+        <div class="col-md-4 mb-4">
+          <div
+            class="card h-100 shadow-sm"
+            data-desc="Deskripsi lengkap Proyek C: Aplikasi Rental Mobil."
+          >
+            <img src="../img/cars.jpg" class="card-img-top" alt="Proyek 3" />
+            <div class="card-body">
+              <h5 class="card-title">Proyek C</h5>
+              <p class="card-text">Deskripsi singkat proyek C.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Baris kedua: 2 kartu -->
+      <div class="row">
+        <!-- Galeri item 4 -->
+        <div class="col-md-6 mb-4">
+          <div
+            class="card h-100 shadow-sm"
+            data-desc="Deskripsi lengkap Proyek D: Website Teknologi Terbaru."
+          >
+            <img
+              src="../img/teknologi.jpg"
+              class="card-img-top"
+              alt="Proyek 4"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Proyek D</h5>
+              <p class="card-text">Deskripsi singkat proyek D.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Galeri item 5 -->
+        <div class="col-md-6 mb-4">
+          <div
+            class="card h-100 shadow-sm"
+            data-desc="Deskripsi lengkap Proyek E: Portal Berita Sepakbola."
+          >
+            <img
+              src="../img/teknologi.jpg"
+              class="card-img-top"
+              alt="Proyek 5"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Proyek E</h5>
+              <p class="card-text">Deskripsi singkat proyek E.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+      <div class="container text-center text-md-start">
+        <div class="row text-center text-md-start">
+          <!-- Column 1 -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5
+              class="text-uppercase mb-4 fw-bold"
+              style="color: rgb(245, 238, 220)"
+            >
+              Ahmad Sobirin
+            </h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur ipsa ut magni vero dignissimos ipsum repudiandae odio?
+              Blanditiis, possimus hic.
+            </p>
+          </div>
+
+          <!-- Column 2 -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5
+              class="text-uppercase mb-4 fw-bold"
+              style="color: rgb(245, 238, 220)"
+            >
+              Home
+            </h5>
+            <p>
+              <a href="#home" class="text-white text-decoration-none">Home</a>
+            </p>
+            <p>
+              <a href="#calculator" class="text-white text-decoration-none"
+                >Profile</a
+              >
+            </p>
+            <p>
+              <a href="#about" class="text-white text-decoration-none"
+                >Galery</a
+              >
+            </p>
+            <p>
+              <a href="#contact" class="text-white text-decoration-none"
+                >Contact</a
+              >
+            </p>
+          </div>
+
+          <!-- Column 3 -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5
+              class="text-uppercase mb-4 fw-bold"
+              style="color: rgb(245, 238, 220)"
+            >
+              Kontak
+            </h5>
+            <p>
+              <i class="bi bi-house-door-fill me-2"></i> Indramayu, Indonesia
+            </p>
+            <p>
+              <i class="bi bi-envelope-fill me-2"></i> ahmdsobirin29@gmail.com
+            </p>
+            <p><i class="bi bi-telephone-fill me-2"></i> +62 8960 6904 312</p>
+          </div>
+
+          <!-- Column 4 -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mt-3">
+            <h5
+              class="text-uppercase mb-4 fw-bold"
+              style="color: rgb(245, 238, 220)"
+            >
+              Ikuti Saya
+            </h5>
+            <a
+              href="https://www.facebook.com/sobirin.birin.92560281"
+              class="text-white me-3"
+              target="_blank"
+              ><i class="bi bi-facebook fs-4"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/mad.sob?igsh=MXN2djYwMnBrdWR0dg=="
+              class="text-white me-3"
+              target="_blank"
+              ><i class="bi bi-instagram fs-4"></i
+            ></a>
+            <a
+              href="https://github.com/madSobirin"
+              class="text-white me-3"
+              target="_blank"
+              ><i class="bi bi-github fs-4"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/ahmd-sobirin-69284b348?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              class="text-white"
+              target="_blank"
+              ><i class="bi bi-linkedin fs-4"></i
+            ></a>
+          </div>
+        </div>
+
+        <hr class="mt-4" />
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p class="mb-0">&copy; 2025 Ahmad Sobirin. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../script/jquery-3.7.1.min.js"></script>
+    <!-- Tambahkan di dalam bagian <body> kamu, setelah semua galeri item -->
+    <!-- Pastikan kamu sudah punya jQuery dan Bootstrap JS di bagian bawah sebelum </body> -->
+    <script>
+      $(document).ready(function () {
+        $('.card').click(function () {
+          // Hapus deskripsi tambahan yang sudah ada
+          $('.extra-desc').remove();
+
+          // Ambil deskripsi dari atribut data-desc
+          const extraText = $('<div class="extra-desc mt-2 text-muted">').text(
+            $(this).data('desc')
+          );
+
+          // Tambahkan deskripsi di bawah elemen ini
+          $(this).append(extraText);
+        });
+      });
+    </script>
+    <style>
+      .card {
+        cursor: pointer;
+      }
+    </style>
+  </body>
+</html>

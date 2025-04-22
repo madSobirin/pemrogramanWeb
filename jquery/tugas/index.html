@@ -3,7 +3,343 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jquery | Tugas</title>
+    <title>Creative Portfolio | Web Developer</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap-icons.css" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../bootstrap/css/style.css" />
   </head>
-  <body></body>
+
+  <body data-bs-spy="scroll" data-bs-target=".navbar">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm py-3">
+      <div class="container">
+        <a class="navbar-brand" href="#">Tugas<span>Jquery</span></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item mx-2">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="profil.html">Profile</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="galery.html">Gallery</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="kontak.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+      <section id="home" class="mb-5">
+        <h2 class="section-title">Articles</h2>
+
+        <div
+          id="featuredCarousel"
+          class="carousel slide hero-carousel mb-4"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#featuredCarousel"
+              data-bs-slide-to="0"
+              class="active"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#featuredCarousel"
+              data-bs-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#featuredCarousel"
+              data-bs-slide-to="2"
+            ></button>
+          </div>
+
+          <div class="carousel-inner rounded-3 overflow-hidden">
+            <div
+              class="carousel-item active"
+              style="background-image: url('../img/teknologi.jpg')"
+            >
+              <div class="carousel-caption">
+                <h3>Perkembangan Teknologi AI Terbaru</h3>
+                <p>
+                  How artificial intelligence is changing the future of industry
+                </p>
+                <a href="artikel1.html" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+
+            <div
+              class="carousel-item"
+              style="background-image: url('../img/economi.jpg')"
+            >
+              <div class="carousel-caption">
+                <h3>This Quarter's Economic Growth</h3>
+                <p>In-depth analysis of current economic conditions</p>
+                <a href="../tugas/artikel2.html" class="btn btn-primary"
+                  >Read More</a
+                >
+              </div>
+            </div>
+
+            <div
+              class="carousel-item"
+              style="background-image: url('../img/health.jpg')"
+            >
+              <div class="carousel-caption">
+                <h3>Latest Innovations in Healthcare</h3>
+                <p>Discoveries that could change modern medicine</p>
+                <a href="../tugas/artikel3.html" class="btn btn-primary"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#featuredCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#featuredCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Latest Articles -->
+      <section id="trending" class="mb-5">
+        <h2 class="section-title">Latest Articles</h2>
+        <div class="row g-4">
+          <!-- Article Card 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card article-card h-100">
+              <img
+                src="../img/teknologi.jpg"
+                class="card-img-top"
+                alt="Article 1"
+              />
+              <div class="card-body">
+                <span class="badge bg-primary mb-2">Technology</span>
+                <h5 class="card-title">5G Revolution in Indonesia</h5>
+                <p class="card-text">
+                  How 5G networks will change the way we communicate and work in
+                  2023.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted">2 hours ago</small>
+                  <a
+                    href="../tugas/artikel1.html"
+                    class="btn btn-sm btn-primary"
+                    >Read</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Article Card 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card article-card h-100">
+              <img
+                src="../img/economi.jpg"
+                class="card-img-top"
+                alt="Article 2"
+              />
+              <div class="card-body">
+                <span class="badge bg-success mb-2">Business</span>
+                <h5 class="card-title">New Unicorn Startup in Asia</h5>
+                <p class="card-text">
+                  This tech company reached $1 billion valuation in just 18
+                  months.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted">1 day ago</small>
+                  <a
+                    href="../tugas/artikel2.html"
+                    class="btn btn-sm btn-primary"
+                    >Read</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Article Card 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card article-card h-100">
+              <img
+                src="../img/health.jpg"
+                class="card-img-top"
+                alt="Article 3"
+              />
+              <div class="card-body">
+                <span class="badge bg-danger mb-2">Health</span>
+                <h5 class="card-title">New Vaccine for Seasonal Flu</h5>
+                <p class="card-text">
+                  Researchers develop vaccine with 90% effectiveness against
+                  various flu strains.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted">3 days ago</small>
+                  <a
+                    href="../tugas/artikel3.html"
+                    class="btn btn-sm btn-primary"
+                    >Read</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+      <div class="container text-center text-md-start">
+        <div class="row text-center text-md-start">
+          <!-- Column 1 -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5
+              class="text-uppercase mb-4 fw-bold"
+              style="color: rgb(245, 238, 220)"
+            >
+              Ahmad Sobirin
+            </h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur ipsa ut magni vero dignissimos ipsum repudiandae odio?
+              Blanditiis, possimus hic.
+            </p>
+          </div>
+
+          <!-- Column 2 -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5
+              class="text-uppercase mb-4 fw-bold"
+              style="color: rgb(245, 238, 220)"
+            >
+              Home
+            </h5>
+            <p>
+              <a href="#home" class="text-white text-decoration-none">Home</a>
+            </p>
+            <p>
+              <a href="#calculator" class="text-white text-decoration-none"
+                >Profile</a
+              >
+            </p>
+            <p>
+              <a href="#about" class="text-white text-decoration-none"
+                >Galery</a
+              >
+            </p>
+            <p>
+              <a href="#contact" class="text-white text-decoration-none"
+                >Contact</a
+              >
+            </p>
+          </div>
+
+          <!-- Column 3 -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5
+              class="text-uppercase mb-4 fw-bold"
+              style="color: rgb(245, 238, 220)"
+            >
+              Kontak
+            </h5>
+            <p>
+              <i class="bi bi-house-door-fill me-2"></i> Indramayu, Indonesia
+            </p>
+            <p>
+              <i class="bi bi-envelope-fill me-2"></i> ahmdsobirin29@gmail.com
+            </p>
+            <p><i class="bi bi-telephone-fill me-2"></i> +62 8960 6904 312</p>
+          </div>
+
+          <!-- Column 4 -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mt-3">
+            <h5
+              class="text-uppercase mb-4 fw-bold"
+              style="color: rgb(245, 238, 220)"
+            >
+              Ikuti Saya
+            </h5>
+            <a
+              href="https://www.facebook.com/sobirin.birin.92560281"
+              class="text-white me-3"
+              target="_blank"
+              ><i class="bi bi-facebook fs-4"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/mad.sob?igsh=MXN2djYwMnBrdWR0dg=="
+              class="text-white me-3"
+              target="_blank"
+              ><i class="bi bi-instagram fs-4"></i
+            ></a>
+            <a
+              href="https://github.com/madSobirin"
+              class="text-white me-3"
+              target="_blank"
+              ><i class="bi bi-github fs-4"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/ahmd-sobirin-69284b348?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              class="text-white"
+              target="_blank"
+              ><i class="bi bi-linkedin fs-4"></i
+            ></a>
+          </div>
+        </div>
+
+        <hr class="mt-4" />
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p class="mb-0">&copy; 2025 Ahmad Sobirin. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../script/jquery-3.7.1.min.js"></script>
+
+    <script src="../script/script.js"></script>
+  </body>
 </html>
